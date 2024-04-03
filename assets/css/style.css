@@ -24,6 +24,7 @@ body {
   background: transparent;
   border-radius: 3px;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
 }
 
 
@@ -39,6 +40,7 @@ body {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
   border-radius: 7px;
   letter-spacing: 3px;
+  transition: all 0.5s;
 }
 
 .relogio span {
@@ -48,4 +50,20 @@ body {
 
 .relogio span.tempo {
   font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .relogio {
+    width: 200px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+  }
+
+  .relogio div {
+    width: 170px;
+    height: 150px;
+    transition: all 0.5s;
+  }
 }
